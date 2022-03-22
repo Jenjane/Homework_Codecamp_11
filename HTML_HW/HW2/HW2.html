@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         table,th,td{
+         text-align: left;
+    }
+    </style>
+</head>
+<body>
+    <h1>Booking Flight</h1>
+    <form action="http://jkorpela.fi/cgi-bin/echo.cgi">
+
+    <table>
+         <tr>
+         <th colspan="2">
+         <label for="Flying from">Flying from</label><br>
+         <select name="Flying from">
+            <option value="Pattaya">Pattaya</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Bangkok">Bangkok</option>
+            <option value="Nonthaburi">Nonthaburi</option>
+         </select>
+         </th>
+
+    
+        <th colspan="2">
+        <label for="To">To</label><br>
+        <select name="To">
+            <option value="Nonthaburi">Nonthaburi</option>
+            <option value="Bangkok">Bangkok</option>
+            <option value="Phuket">Phuket</option>
+            <option value="Pattaya">Pattaya</option>
+         </select>
+         </th> 
+         </tr>
+
+         <!--เเถวที่ 1-->
+
+    <table>
+         <tr>
+         <th colspan="2">
+         <label for="Departing">Departing</label><br>
+             <input type="date" name="Returning">
+        </th>
+
+        <th colspan="2">
+        <label for="Returning">Returning</label><br>
+             <input type="date" name="Returning">
+         </th> 
+         </tr>
+        <!--เเถวที่ 2-->
+    
+    <table>
+         <tr>
+         <th colspan="4">    
+         <label for="Adult">Adult</label><br>
+         <input type="number" name="Adult" min="1" max="100">
+         </th>
+
+         <th colspan="4">
+         <label for="Child">Child</label><br>
+         <input type="number" name="Child" min="1" max="100">
+         </th>
+
+         <th colspan="4">
+         <label for="Infant">Infant</label><br>
+         <input type="number" name="Infant" min="1" max="100">
+         </th>
+
+         <th colspan="4">
+         <label for="Currency" style="color: red;">Currency</label><br>
+         <select name="Currency">
+             <option value="THB">THB</option>
+             <option value="ERU">ERU</option>
+             <option value="USD">USD</option>
+             <option value="JYP">JYP</option>
+             </select>
+         </tr>
+         </th>
+    </table>
+    
+    <P><input type="submit" value="Submit"></P>
+    </form> 
+    
+</body>
+</html>
